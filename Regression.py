@@ -43,7 +43,7 @@ print(df)
 
 dfl = df.head(25)
 dfl.plot(kind='bar', figsize=(16, 10))
-plt.grid(whiich='major', linestyle='-', linewidth='0.5', color='green')
+plt.grid(which='major', linestyle='-', linewidth='0.5', color='green')
 plt.grid(which='minor', linestyle=':', linewidth='0.5', color='black')
 plt.show()
 
