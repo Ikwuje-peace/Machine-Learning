@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as seabornInstance
+import seaborn as seaborninstance
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn import metrics
@@ -19,7 +19,7 @@ plt.show()
 
 plt.figure(figsize=(15, 10))
 plt.tight_layout()
-seabornInstance.distplot(dataset('Maximum temperature'))
+seaborninstance.distplot(dataset('Maximum temperature'))
 plt.show()
 
 #dataslicing
