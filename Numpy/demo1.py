@@ -32,3 +32,13 @@ print(b[:, 1])
 c = np.array([[1,2,3,4,5,6,7], [8,9,10,11,12,13,14]])
 
 print(c[0, 1:6:2])
+#to change something in array
+#This block of code changes the sixth elementh on the second row to be equals to 20
+c[1,5] = 20
+print(c)
+
+#to change the elemnts on a column
+c[:, 2] = 5
+#and if you want the replacement to be two different numbers, you just have to specify
+# c[:, 2] = [1, 2]
+print(c)
