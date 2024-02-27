@@ -7,3 +7,7 @@ print(a[0, 1, 1])
 
 # you can as well do this to get the elements in the second row of all the arrays
 print(a[:,1,:])
+
+# to change something in a three dimensional array
+a[:1,:] = [[9,9], [8, 8]]
+print(a)
