@@ -16,3 +16,7 @@ print('c is ', c)
 #for a four dimension
 d = np.zeros([2,3,3,2])
 print('And d is ',d)
+
+#Second for an all 1s matrix
+e = np.ones([4,3,2], dtype='int32')
+print('E is,', e)
