@@ -29,3 +29,7 @@ print("F is  ", f)
 g = np.full_like(e, 4)
 # if you didnt use fulllike then youll have to use np.full(e.shape, 4)
 print("G the full like is ", g)
+# To create an array of random  numbers
+h = np.random.rand(4,2,)
+#to pass in a shape, you could do np.random.random_sample(a.shape)
+print(h)
