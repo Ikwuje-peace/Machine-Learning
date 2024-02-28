@@ -20,3 +20,12 @@ print('And d is ',d)
 #Second for an all 1s matrix
 e = np.ones([4,3,2], dtype='int32')
 print('E is,', e)
+
+#third for a matrix that is all ones or twos, and you want to indicate what should be on the matrix
+f = np.full((2,2), 99, dtype='float32')
+print("F is  ", f)
+
+#Any other number (full_like)
+g = np.full_like(e, 4)
+# if you didnt use fulllike then youll have to use np.full(e.shape, 4)
+print("G the full like is ", g)
