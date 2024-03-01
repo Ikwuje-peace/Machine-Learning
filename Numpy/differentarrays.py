@@ -36,3 +36,9 @@ print(h)
 # Random integer values
 i = np.random.randint(7, size=(3,3))
 print(i)
+#for identity matrix
+j = np.identity(5)
+print(j)
+arr =  np.array([1,2,3])
+r1 = np.repeat(arr,3)
+print(r1)
