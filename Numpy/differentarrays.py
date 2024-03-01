@@ -39,6 +39,7 @@ print(i)
 #for identity matrix
 j = np.identity(5)
 print(j)
-arr =  np.array([1,2,3])
-r1 = np.repeat(arr,3)
+#For repeat array
+arr =  np.array([[1,2,3]])
+r1 = np.repeat(arr,3,axis=0)
 print(r1)
