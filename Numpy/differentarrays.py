@@ -35,3 +35,4 @@ h = np.random.rand(4,2,)
 print(h)
 # Random integer values
 i = np.random.randint(7, size=(3,3))
+print(i)
