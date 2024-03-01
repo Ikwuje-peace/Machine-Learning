@@ -33,3 +33,5 @@ print("G the full like is ", g)
 h = np.random.rand(4,2,)
 #to pass in a shape, you could do np.random.random_sample(a.shape)
 print(h)
+# Random integer values
+i = np.random.randint(7, size=(3,3))
