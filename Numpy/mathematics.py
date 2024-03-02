@@ -5,5 +5,18 @@ a *= 2
 # same way you can minus too -=2, or *=2 or =+2
 #to take sin of all the numbers
 b = np.sin(a)
+c = np.cos(a)
 print(a)
 print(b)
+print(c)
+
+#Linear Algebra
+d = np.ones((2,3))
+print(d)
+
+e = np.full((3,2), 2)
+print(e)
+
+#to be able to effectively multiply these two arrays we use np.matmul
+f = np.matmul(d,e)
+print(f)
