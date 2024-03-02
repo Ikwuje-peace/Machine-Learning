@@ -20,3 +20,9 @@ print(e)
 #to be able to effectively multiply these two arrays we use np.matmul
 f = np.matmul(d,e)
 print(f)
+
+#To find the determinant of the matrix
+g = np.identity(3)
+h = np.linalg.det(g)
+print(g)
+print(h)
