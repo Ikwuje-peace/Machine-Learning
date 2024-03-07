@@ -22,6 +22,7 @@ scope_test()
 print("In global scope:", spam)
 
 
+#This section is to test the function of the __init__ ()method
 class Complex:
     def __init__(self, realpart, imagpart):
         self.r = realpart
@@ -29,3 +30,15 @@ class Complex:
 
 x = Complex(3.0, 4.5)
 print(x.r, x.i)
+
+class Myclass:
+    """This is just a simple class too"""
+    counter = 1234
+    def f(self):
+        return("The first real class")
+y = Myclass()
+y.counter = 1
+while y.counter < 10:
+    y.counter *= 2
+print(y.counter)
+del(y.counter)
