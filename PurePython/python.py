@@ -41,4 +41,4 @@ y.counter = 1
 while y.counter < 10:
     y.counter *= 2
 print(y.counter)
-del(y.counter)
+del y.counter
