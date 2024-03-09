@@ -17,3 +17,9 @@ print(e.kind)
 print(e.owner)
 print(d.owner)
 print(e.name)
+
+
+class People:
+    def __init__(self, name, character):
+        self.name = name
+        self.character =  character
