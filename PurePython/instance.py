@@ -19,6 +19,26 @@ print(d.owner)
 print(e.name)
 
 
+"""How to add a list to a class for a specific instance and not all of them at one"""
+class Dogs:
+    def __init__(self, name): 
+        self.name =  name
+        self.tricks = []
+    def add_trick(self, trick):
+        self.tricks.append(trick)
+
+j = Dogs('Bruno')
+j.add_trick("roll over")
+j.add_trick("jump and turn upside down")
+
+k = Dogs('slyvia')
+k.add_trick("fly over the wheel")
+
+print(j.name, j.tricks)
+print(k.name, k.tricks)
+
+
+
 class People:
     def __init__(self, name, character):
         self.name = name

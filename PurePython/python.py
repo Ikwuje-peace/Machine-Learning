@@ -33,12 +33,12 @@ print(x.r, x.i)
 
 class Myclass:
     """This is just a simple class too"""
-    counter = 1234
+    counter = int()
     def f(self):
         return("The first real class")
 y = Myclass()
 y.counter = 1
-while y.counter < 10:
+while y.counter < 78:
     y.counter *= 2
 print(y.counter)
 del y.counter
