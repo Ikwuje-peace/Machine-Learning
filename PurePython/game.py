@@ -11,9 +11,14 @@ print('You have five guesses, try to guess the number')
 print(number)
 guess = int(input())
 
-if number == guess:
-    score =+ 5
-    print('{0}, is your score {1}, and you guessed correctly'.format(score, name))
-else:
-    score = 0
-    print('You didnt guess correctly')
+while True:
+    if number == guess:
+        score =+ 5
+        print('{0}, is your score {1}, and you guessed correctly'.format(score, name))
+    else:
+        score = 0
+        print('You didnt guess correctly')
+        trials -=1
+        if trials == 0:
+            print('You have no more trials')
+    break
