@@ -1,22 +1,21 @@
 import random
 
-print('This is a guessing game')
+print('\n This is a guessing game')
 name = input(str('What is your name '))
+name = name.capitalize()
 print('{}, Thank you for agreeing to do this game with us'.format(name))
 number = random.randint(1, 100)
 trials = 5
 score = 20
-print('{} is your score and you have {} guesses, try to guess the number'.format(score, trials))
+print('\n {} is your score and you have {} guesses, try to guess the number'.format(score, trials))
 print(number)
 guess = int(input())
 
 
 while number != guess:
-    
-    if number != guess:
         score -= 4
         trials -= 1
-        print('{0}, is your score {1}, and you didnt guess correctly. Try again'.format(score, name))
+        print('\n {0}, is your score {1}, and you didnt guess correctly. Try again'.format(score, name))
         print('\n You have {} more guesses left'.format(trials))
         guess = int(input())
 
