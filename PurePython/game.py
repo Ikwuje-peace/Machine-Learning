@@ -7,7 +7,8 @@ print('{}, Thank you for agreeing to do this game with us'.format(name))
 number = random.randint(1, 100)
 trials = 5
 score = 20
-print('\n {} is your score and you have {} guesses, try to guess the number'.format(score, trials))
+print('\n {} is your score and you have {} guesses, try to guess the number\n'.format(score, trials))
+print("The number is in the range of {} to {}".format(number+10, number-10))
 print(number)
 guess = int(input())
 
