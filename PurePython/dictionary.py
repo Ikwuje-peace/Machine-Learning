@@ -2,7 +2,7 @@ import random
 
 dictionary = []
 
-with open("words.txt", 'r') as word:
+with open(r"PurePython\words.txt", 'r') as word:
 	words = set(word.read().split())
 	for text in words:
 		dictionary.append(text)
