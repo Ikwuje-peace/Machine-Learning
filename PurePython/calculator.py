@@ -9,5 +9,5 @@ class Calculator():
         elif operation == '*':
             print(num1*num2)
 
-x = Calculator(13, '-', 2)
+x = Calculator(14, '/', 2)
 print(x)

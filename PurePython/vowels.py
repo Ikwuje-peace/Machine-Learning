@@ -7,6 +7,7 @@ class Words():
                 print(i)
             else:
                 pass
+            print(vowel)
 
 x = Words('Name')
 print(x)
