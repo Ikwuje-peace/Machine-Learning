@@ -1,13 +1,13 @@
+word = input(str('\nType in any word in this section and I will count the number of vowels in it '))
 class Words():
-    def __init__(self, vowels):
+    def __init__(self, words):
         vowel = 0
-        for i in vowels:
-            if i in 'aeiouAEIOU':
+        for letter in words:
+            if letter in 'aeiouAEIOU':
                 vowel += 1
-                print(i)
             else:
                 pass
-            print(vowel)
+        print('There are {0} vowels in the word {1}'.format(vowel, words))
 
-x = Words('Name')
+x = Words(word)
 print(x)
