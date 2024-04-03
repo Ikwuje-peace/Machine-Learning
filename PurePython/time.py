@@ -14,25 +14,27 @@ print(number)
 guess = int(input())
 
 
-allocated_time = 60
+allocated_time = 10
 startTime = time.time()
 gameOver = False
+correct = False
 
 while gameOver == False:
-    while number != guess:
-        score -= 4
-        trials -= 1
-        print('\n {0}, is your score {1}, and you didnt guess correctly. Try again'.format(score, name))
-        print('\n You have {} more guesses left'.format(trials))
-        guess = int(input())
+    while correct == False:
+        if number != guess:
+            score -= 4
+            trials -= 1
+            print('\n {0}, is your score {1}, and you didnt guess correctly. Try again'.format(score, name))
+            print('\n You have {} more guesses left'.format(trials))
+            guess = int(input())
 
-        if trials == 0:
-            print("\n This is the end of the game, I am so sorry you didnt guess correctly")
-            break
-
-    if number == guess:
-        score += 5
-        print('You have guessed correctly. {} is your score.'.format(score))
+            if trials == 0:
+                print("\n This is the end of the game, I am so sorry you didnt guess correctly")
+                correct = True
+        if number == guess:
+            score += 5
+            print('You have guessed correctly. {} is your score.'.format(score))
+            correct = True
     
     time.sleep(1)
     elapsedTime = time.time() - startTime
