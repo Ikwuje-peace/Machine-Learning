@@ -3,6 +3,7 @@ import random
 class Dice():
     def __init__(self, numberOfSides=6):
         self._numberOfSides = numberOfSides
+        #In Python the "__" prefix is used to indicate a private property or methid
         self.value =  1
 
     def throw(self):
@@ -22,6 +23,6 @@ print(dice2.value)
 if dice1.value > dice2.value:
     print('First dice wins')
 elif dice1.value < dice2.value:
-    print('Second dice')
+    print('Second dice wins')
 else:
     print('It is a draw')
