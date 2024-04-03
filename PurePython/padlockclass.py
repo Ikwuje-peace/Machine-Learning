@@ -16,3 +16,12 @@ class Padlock():
             return True
         else:
             return False
+
+padlock = Padlock('1234')
+
+while padlock.locked:
+    combination = input('Input four digit combination')
+    padlock.unlock(combination)
+    if padlock.locked:
+        print('Invalid combination, please try again!')
+print("You have guessed correctly")
