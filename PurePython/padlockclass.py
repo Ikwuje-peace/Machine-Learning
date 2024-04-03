@@ -2,8 +2,8 @@ class Padlock():
     def __init__(self, key='0000', locked= True):
         self.__key = key
         self.locked = locked
-    def unlock(self, combiation):
-        if combiation == self.__key:
+    def unlock(self, combination):
+        if combination == self.__key:
             self.locked =  False
             return True
     def lock(self):
@@ -20,7 +20,7 @@ class Padlock():
 padlock = Padlock('1234')
 
 while padlock.locked:
-    combination = input('Input four digit combination')
+    combination = input('Input four digit combination ')
     padlock.unlock(combination)
     if padlock.locked:
         print('Invalid combination, please try again!')
