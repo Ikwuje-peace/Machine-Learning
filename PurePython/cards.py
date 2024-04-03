@@ -43,3 +43,37 @@ class Deck():
         return (len(self.deck)==0)
     def length(self):
         return len(self.deck)
+    
+
+#main program
+deckOfCards = Deck()
+deckOfCards.shuffle()
+scorePlayer1 = 0
+scorePlayer2 = 0
+roundNumber = 1
+
+while not deckOfCards.isEmpty():
+    print('\n ----- Round '+ str(roundNumber)+ ' ----')
+    roundNumber += 1
+    card1 = deckOfCards.deal()
+    card2 = deckOfCards.deal()
+    print('       Card 1 : '+ card1.toString())
+    print('       Card 2 : '+ card2.toString())
+    if card1.getRank() > card2.getRank():
+        print(' Card 1 wins')
+        scorePlayer1 += 1
+    elif card1.getRank() < card2.getRank():
+        print(' Card 2 wins')
+        scorePlayer2 += 1
+    else:
+        print('     It is a draw')
+print('\n ----- Game Over -----')
+print('Score Player 1 : ' + str(scorePlayer1))
+print('Score Player 2 : ' + str(scorePlayer2))
+
+if scorePlayer2 > scorePlayer2:
+    print('  Player 1 wins ')
+elif scorePlayer1 < scorePlayer2:
+    print('Player 2 wins')
+else:
+    print('It is  a draw')
