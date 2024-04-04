@@ -20,3 +20,5 @@ for round in range(1,11):
         score1 += coin.value
     else:
         score2 += coin.value
+print('Head Score: $ ' + str(score1))
+print('Tail Score: $ ' + str(score2))
