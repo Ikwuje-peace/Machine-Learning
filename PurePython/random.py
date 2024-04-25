@@ -12,3 +12,8 @@ for i in range(0, 21):
     print(i**6, i//3, i*5)
 
 name = str(input('What is your name'))
+for i in name:
+    if i in 'aeiou':
+        print(i)
+    else:
+        pass
