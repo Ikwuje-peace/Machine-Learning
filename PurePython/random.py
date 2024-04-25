@@ -10,3 +10,5 @@ print(number)
 
 for i in range(0, 21):
     print(i**6, i//3, i*5)
+
+name = str(input('What is your name'))
