@@ -47,6 +47,6 @@ plt.grid(which='major', linestyle='-', linewidth='0.5', color='green')
 plt.grid(which='minor', linestyle=':', linewidth='0.5', color='black')
 plt.show()
 
-print('<ean Absolute Error', metrics.mean_absolute_error(y_test, y_pred))
+print('Mean Absolute Error', metrics.mean_absolute_error(y_test, y_pred))
 print('Mean Squared Error', metrics.mean_squared_error(y_test, y_pred))
 print('Root Mean Squared Error', np.sqrt(metrics.mean_squared_error(y_test, y_pred)))
