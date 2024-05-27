@@ -7,5 +7,6 @@
   <li>Basic Python programs too such as <li>For loops</li>
 <li>Classes and Functions</li>
 <li>Ranges and Random selections</li>
-<li>Operations, Operators, and Operands</li></li>
+<li>Operations, Operators, and Operands</li>
+<li>Syntax and Exceptions</li></li>
 </ul>
