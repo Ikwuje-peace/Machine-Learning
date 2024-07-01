@@ -1,7 +1,7 @@
 <h1>Hello World 👋</h1>
 <p>Welcome to my beginner Machine Learning Project.</p>
 <ul>
-  <li>Matplotlib</li>
+  <li>Matplotlib</li>: Building graphs and plots
   <li>Numpy</li>
   <li>Pandas</li>
   <li>Basic Python programs too such as <li>For loops</li>
