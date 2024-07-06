@@ -27,5 +27,6 @@ while number != guess:
 if number == guess:
     score += 5
     print('You have guessed correctly. {} is your score.'.format(score))
+print("You have come to the end of the game")
         
        
