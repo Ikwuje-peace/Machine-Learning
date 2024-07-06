@@ -1,3 +1,4 @@
+#This is a function test
 def scope_test():
     def do_local():
         spam = "local spam"
